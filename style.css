@@ -1,0 +1,47 @@
+/* Reset general pentru a elimina marginile albe default ale browserului */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+/* Header-ul sus, eventual cu un fundal semi-transparent */
+header {
+    position: relative; /* Sau 'fixed' dacă vrei să rămână sus când dai scroll */
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    color: white;
+    margin: 0;
+}
+/* Videoul care stă FIX în spate pe tot ecranul */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ocupă mereu 100% din înălțimea ecranului vizibil */
+    object-fit: cover; /* Important: nu lasă spații negre/albe lateral */
+    z-index: -1; /* Trimite-l sub tot restul textului */
+}
+
+/* Containerul de text care va permite scroll-ul */
+main {
+    position: relative;
+    z-index: 1;
+    padding: 50px 10%;
+    color: white;
+    line-height: 1.6;
+}
+
+section {
+    margin-bottom: 300px; /* Doar ca să ai destul spațiu să testezi scroll-ul */
+    background: rgba(0, 0, 0, 0.5); /* Face textul mult mai ușor de citit peste video */
+    padding: 20px;
+    border-radius: 8px;
+}
