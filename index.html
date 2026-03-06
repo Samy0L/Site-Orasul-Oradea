@@ -1,61 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oraşul Oradea</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oraşul minunilor lumii nedescoperite, Oradea</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Shadows+Into+Light&display=swap"
+            rel="stylesheet">
 
-<body>
-    <video autoplay muted loop id="bg-video">
-        <source src="Oradea.mp4" type="video/mp4">
-        Browserul tău nu suportă formatul video.
-    </video>
-    <header>
-        <h1>Oraşul Oradea</h1>
-        <nav>
-            <ul>
-                <li><a href="#istorie">Istorie</a></li>
-                <li><a href="#atractii">Atracții turistice</a></li>
-                <li><a href="#cultura">Cultură și evenimente</a></li>
-                <li><a href="#gastronomie">Gastronomie</a></li>
-            </ul>
-        </nav>
-    </header>
-    <video autoplay muted loop id="bg-video">
-        <source src="Oradea.mp4" type="video/mp4">
-        Browserul tău nu suportă formatul video.
-    </video>
-    <main>
-        <section id="istorie">
-            <h2>Istorie</h2>
-            <p>Oradea este un oraș cu o istorie bogată, datând din antichitate. A fost locuit încă din epoca bronzului și a fost un important centru comercial în Evul Mediu. Orașul a fost influențat de diverse culturi, inclusiv cea maghiară, germană și română, ceea ce se reflectă în arhitectura sa diversă.</p>
-        </section>
+    </head>
 
-        <section id="atractii">
-            <h2>Atracții turistice</h2>
-            <ul>
-                <li>Palatul Baroc</li>
-                <li>Biserica cu Lună</li>
-                <li>Parcul 1 Decembrie</li>
-                <li>Teatrul Regina Maria</li>
-                <li>Faleza Crișului Repede</li>
-            </ul>
-        </section>
+    <body>
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="Oradea.mp4" type="video/mp4">
+        </video>
+        <header>
+            <div class="container">
+                <h1>Oradea</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#istorie">Istorie</a></li>
+                        <li><a href="#atractii">Atracții</a></li>
+                        <li><a href="#cultura">Cultură</a></li>
+                        <li><a href="#gastronomie">Gastronomie</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <section id="cultura">
-            <h2>Cultură și evenimente</h2>
-            <p>Oradea găzduiește numeroase evenimente culturale pe tot parcursul anului, inclusiv festivaluri de muzică, teatru și artă. Orașul are o scenă culturală vibrantă, cu numeroase galerii de artă și muzee care prezintă istoria și cultura locală.</p>
-        </section>
+        <main>
+            <section id="istorie">
+                <h2>Istorie</h2>
+                <div class="info-oradea">
+                    <img src="nistorarmin-romania-3283909.jpg"
+                        alt="Panoramă cu centrul orașului Oradea">
 
-        <section id="gastronomie">
-            <h2>Gastronomie</h2>
-            <p>Bucătăria din Oradea este influențată de tradițiile culinare maghiare și românești. Printre specialitățile locale se numără gulyás (ciorbă de vită), kürtőskalács (cozonac secuiesc) și papanași (gogoși umplute cu brânză dulce).</p>
-        </section>
+                    <p>
+                        Oradea este unul dintre cele mai frumoase orașe din
+                        vestul României,
+                        renumit pentru arhitectura sa Art Nouveau și pentru
+                        istoria sa bogată.
+                        Orașul a fost un important centru cultural și comercial
+                        în Europa Centrală,
+                        fiind influențat de mai multe culturi de-a lungul
+                        secolelor, inclusiv
+                        română, maghiară și austriacă.
+                        <br>
+                        În prezent, orașul este apreciat pentru clădirile sale
+                        istorice
+                        restaurate, piețele elegante și atmosfera sa relaxantă.
+                        Printre
+                        cele mai cunoscute obiective turistice se numără Cetatea
+                        Oradea,
+                        Palatul Baroc, Biserica cu Lună și Aquapark Nymphaea.
+                    </p>
+                </div>
+            </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Dacă doriți să aflați mai multe despre Oradea sau să planificați o vizită, nu ezitați să ne contactați la adresa de email:
-</body>
+            <section id="atractii" class="atractii">
+                <h2>Atracții turistice</h2>
+                <ul class="atractii-grid">
+                    <li>
+                        Cetatea Oradea
+                        <img src="Cetatea Oradea.jpg" alt>
+                    </li>
+                    <li>
+                        Palatul Baroc
+                        <img src="Palatul-Baroc.jpg" alt>
+                    </li>
+                    <li>
+                        Parcul 1 Decembrie
+                        <img src="parcul_1_dec.jpg" alt>
+                    </li>
+                    <li>
+                        Teatrul Regina Maria
+                        <img src="Teatrul_Regina_Maria_2.jpg" alt>
+                    </li>
+                    <li>
+                        Faleza Crișului Repede
+                        <img src="faleza.jpg" alt>
+                    </li>
+                    <li>
+                        Aquapark Nymphaea
+                        <img src="BE_grid_2.jpg" alt>
+                    </li>
+                    <li>
+                        Palatul Vulturul Negru
+                        <img src="vulturul negru.jpg" alt>
+                    </li>
+                    <li>
+                        Dealul Ciuperca
+                        <img src="ciuperca.jpg" alt>
+                    </li>
+                    <li>
+                        Sinagoga Sion
+                        <img src="Sinagoga-Sion-6-of-11.jpg" alt>
+                    </li>
+                </ul>
+                <div class="mai-multe-detalii">
+                    <h3>Pentru mai multe detalii:</h3>
+                    <a
+                        href="https://www.alohotels.ro/blog/locuri-de-vizitat-in-oradea"
+                        target="_blank">
+                        Apasă aici
+                    </a>
+                </div>
+            </section>
+
+            <section id="cultura">
+                <h2>Cultură și evenimente</h2>
+                <p>
+                    Oradea este un oraș cu o viață culturală activă și diversă,
+                    care îmbină
+                    tradițiile istorice cu evenimente moderne. Datorită
+                    patrimoniului său
+                    arhitectural și poziției geografice, orașul a devenit un
+                    important
+                    centru cultural în vestul României. Numeroase instituții
+                    culturale,
+                    muzee și galerii de artă contribuie la păstrarea și
+                    promovarea
+                    patrimoniului local.
+                </p>
+
+                <p>
+                    În oraș se organizează frecvent spectacole de teatru,
+                    concerte,
+                    expoziții de artă și festivaluri care atrag vizitatori din
+                    întreaga
+                    țară. Teatrul Regina Maria este una dintre cele mai
+                    importante
+                    instituții culturale din Oradea, oferind spectacole de
+                    teatru,
+                    musicaluri și evenimente artistice de calitate.
+                </p>
+
+                <p>
+                    Pe parcursul anului au loc și numeroase festivaluri, precum
+                    festivaluri de muzică, evenimente gastronomice și târguri
+                    tematice
+                    organizate în centrul orașului. Aceste evenimente aduc
+                    împreună
+                    artiști, muzicieni și vizitatori, contribuind la atmosfera
+                    vibrantă și la dezvoltarea turismului cultural în Oradea.
+                </p>
+
+                <p>
+                    De asemenea, spațiile publice precum piețele istorice,
+                    parcurile
+                    și faleza Crișului Repede sunt frecvent folosite pentru
+                    spectacole în aer liber, proiecții de film și evenimente
+                    comunitare. Toate aceste activități transformă Oradea
+                    într-un oraș plin de viață, unde cultura și arta sunt
+                    prezente în viața de zi cu zi a locuitorilor și a
+                    turiștilor.
+                </p>
+            </section>
+
+            <section id="gastronomie">
+                <h2>Gastronomie</h2>
+
+                <p>
+                    Bucătăria din Oradea este influențată de tradițiile culinare
+                    românești,
+                    maghiare și central-europene. În restaurantele și
+                    bistrourile din oraș
+                    pot fi descoperite atât preparate tradiționale, cât și
+                    reinterpretări
+                    moderne ale acestora. Mâncărurile sunt apreciate pentru
+                    gustul bogat,
+                    ingredientele proaspete și combinațiile de condimente
+                    specifice zonei.
+                </p>
+
+                <div class="mancare-grid">
+
+                    <div class="mancare">
+                        <img
+                            src="https://delishglobe.com/wp-content/uploads/2025/12/Hungarian-Gulyas-Beef-Goulash-1.png"
+                            alt="Gulyás">
+                        <h3>Gulyás</h3>
+                        <p>O supă consistentă de vită cu legume și boia, foarte
+                            populară în vestul României.</p>
+                    </div>
+
+                    <div class="mancare">
+                        <img
+                            src="https://media.istockphoto.com/id/1147181129/ro/fotografie/papanasi-un-desert-traditional-romanesc.jpg?s=612x612&w=0&k=20&c=jzWk1FMS_lkHszy0vLAD78sN2fcU5TnDKaTYhx78dLk="
+                            alt="Papanași">
+                        <h3>Papanași</h3>
+                        <p>Desert tradițional românesc servit cu smântână și
+                            dulceață.</p>
+                    </div>
+
+                    <div class="mancare">
+                        <img
+                            src="https://media.istockphoto.com/id/452513655/photo/traditional-kurtos-kalacs-cakes-hungary.jpg?s=612x612&w=0&k=20&c=9YsKs5QbkR_TE8sN3JQ2MJB2BPnNKT26ZV6d4FfXGKU="
+                            alt="Kürtőskalács">
+                        <h3>Kürtőskalács</h3>
+                        <p>Un desert cilindric copt pe jar și acoperit cu zahăr
+                            caramelizat.</p>
+                    </div>
+
+                    <div class="mancare">
+                        <img
+                            src="https://cdn.adh.reperio.news/image-f/f77115ab-39ab-434b-b23f-58b2b25f0792/index.jpeg?p=a%3D1%26co%3D1.05%26w%3D500%26h%3D563%26q%3D91%26r%3Dcontain%26f%3Dwebp"
+                            alt="Tocăniță">
+                        <h3>Tocăniță</h3>
+                        <p>Preparat tradițional din carne și legume gătite
+                            lent.</p>
+                    </div>
+
+                    <div class="mancare">
+                        <img
+                            src="https://media.istockphoto.com/id/512285720/ro/fotografie/langos-tradi%C8%9Bional.jpg?s=612x612&w=0&k=20&c=xlm_0Z-JYr-526AFUTw6EQAzValdAfPSbW7sK7bjKbc="
+                            alt="Lángos">
+                        <h3>Lángos</h3>
+                        <p>Aluat prăjit servit cu smântână, brânză sau
+                            usturoi.</p>
+                    </div>
+
+                    <div class="mancare">
+                        <img
+                            src="https://laplacinte.md/public/product_images/31/1731/3eee33742476a3688ac238d0ad252799.webp"
+                            alt="Plăcintă">
+                        <h3>Plăcintă tradițională</h3>
+                        <p>Preparată cu brânză, mere sau dovleac, foarte
+                            populară în zonă.</p>
+                    </div>
+                </div>
+                <div class="mai-multe-detalii">
+                    <h3>Pentru mai multe detalii:</h3>
+                    <a
+                        href="https://www.tripadvisor.com/Restaurants-g304061-Oradea_Bihor_County_Northwest_Romania_Transylvania.html"
+                        target="_blank">
+                        Apasă aici
+                    </a>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Dacă doriți să aflați mai multe despre Oradea sau să
+                    planificați o vizită, nu ezitați să ne contactați la adresa
+                    de <a
+                        href="mailto:magicoradea@yahoo.com">magicoradea@yahoo.com</a>
+                </p>
+                <div class="detalii-contact">
+                    <h3>Sau:</h3>
+                    <a
+                        href="https://www.magic-tours.ro/"
+                        target="_blank">
+                        Apasă aici
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+
+                <div class="footer-col">
+                    <h3>Despre Oradea</h3>
+                    <p>
+                        Oradea este unul dintre cele mai frumoase orașe din
+                        vestul
+                        României, renumit pentru arhitectura Art Nouveau,
+                        evenimentele culturale și gastronomia diversă.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Sectiuni</h3>
+                    <ul>
+                        <li><a href="#istorie">Istorie</a></li>
+                        <li><a href="#atractii">Atracții</a></li>
+                        <li><a href="#cultura">Cultură</a></li>
+                        <li><a href="#gastronomie">Gastronomie</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Email: magicoradea@yahoo.com</p>
+                    <p>Turism Oradea</p>
+                </div>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Descoperă Oradea. Toate drepturile rezervate.
+            </p>
+        </footer>
+    </body>
 </html>

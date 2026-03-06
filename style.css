@@ -1,47 +1,308 @@
-/* Reset general pentru a elimina marginile albe default ale browserului */
-body, html {
+/* Reset + full height */
+html,
+body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    min-height: 100%;
+    height: 100%;
+    font-family: system-ui, sans-serif;
+    color: white;
+    padding-top: 100px;
 }
 
-/* Header-ul sus, eventual cu un fundal semi-transparent */
-header {
-    position: relative; /* Sau 'fixed' dacă vrei să rămână sus când dai scroll */
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
-}
-h1 {
-    color: white;
-    margin: 0;
-}
-/* Videoul care stă FIX în spate pe tot ecranul */
+/* BG-Video*/
 #bg-video {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 70px 0 0 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Header fixat sus */
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Ocupă mereu 100% din înălțimea ecranului vizibil */
-    object-fit: cover; /* Important: nu lasă spații negre/albe lateral */
-    z-index: -1; /* Trimite-l sub tot restul textului */
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(8px);
+    padding: 1rem 0;
 }
 
-/* Containerul de text care va permite scroll-ul */
-main {
-    position: relative;
-    z-index: 1;
-    padding: 50px 10%;
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+nav a {
     color: white;
-    line-height: 1.6;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.main-content {
+    position: relative;
+    /* creează context de stacking */
+    z-index: 10;
+    /* DEASUPRA video-ului, dar SUB header */
+    padding-top: 140px;
+    /* spațiu egal sau mai mare decât înălțimea header-ului */
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.35);
+    /* ajută la citire – ajustezi opacitatea */
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+main h2{
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 section {
-    margin-bottom: 300px; /* Doar ca să ai destul spațiu să testezi scroll-ul */
-    background: rgba(0, 0, 0, 0.5); /* Face textul mult mai ușor de citit peste video */
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 2rem;
+    scroll-margin-top: 200px;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    line-height: 1.7;
+}
+
+.info-oradea{
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.info-oradea img{
+    width: 400px;
     border-radius: 8px;
+}
+
+.info-oradea p{
+    flex: 1;
+}
+
+.atractii img{
+    width: 200px;
+    margin-top: 8px;
+    border-radius: 6px;
+}
+
+.atractii-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.atractii-grid li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.atractii-grid img {
+    width: 150px;
+    margin-top: 8px;
+    border-radius: 6px;
+}
+
+.mancare-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.mancare{
+    background: rgba(0,0,0,0.55);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.mancare img{
+    width: 120px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.mancare h3{
+    margin: 5px 0;
+}
+
+.mai-multe-detalii{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.mai-multe-detalii h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.mai-multe-detalii a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+.mai-multe-detalii a:hover{
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.05);
+}
+
+.detalii-contact{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.detalii-contact h3{
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.detalii-contact a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+.detalii-contact a:hover{
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.05);
+}
+
+footer{
+    background: rgba(0,0,0,0.85);
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-container{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+.footer-col h3{
+    margin-bottom: 15px;
+    font-family: "Lugrasimo", cursive;
+}
+
+.footer-col p{
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.footer-col ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col li{
+    margin-bottom: 8px;
+}
+
+.footer-col a{
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.footer-col a:hover{
+    opacity: 0.7;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+@media (max-width:768px){
+
+    .atractii-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .mancare-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width:480px){
+
+    .atractii-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .mancare-grid{
+        grid-template-columns: 1fr;
+    }
+
 }
